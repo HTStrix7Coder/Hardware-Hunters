@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hardware Hunters</title>
+<link rel="stylesheet" href="MainPagestyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to button click
+        $("#scrollButton").on('click', function() {
+            // Scroll to the second section
+            $('html, body').animate({
+                scrollTop: $("#second").offset().top
+            }, 800);
+        });
+    });
+</script>
+</head>
+    <body>
+        <div class="backing">
+            <nav>
+                <img src="HH.jpg" class="logo" height="70px">
+                <ul>
+                    <li><a href="Main page.html">START</a></li>
+                    <li><a href="sign in.html">LOGIN/SIGNUP</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                </ul>
+            </nav> 
+            <div class="context">
+                <pre>
+                <h1>     HARDWARE<br>     HUNTERS</h1><h2>                A WHOLESOME WEBSITE WHERE 
+                YOUR HARDWARE DREAMS COME TURE</h2>
+                </pre>
+                <button id="scrollButton" class="btn">GET STARTED</button>
+            </div>
+            <div class="context" id="second">
+            <p class="titlehead" style="color: black;">YOUR PC NEEDS IN OUR HANDS</p>
+            <img class="whiteback" src="whitebg.jpg" width="1430" height="900">
+            <a href="Build.html"><img class="buildimage" src="BuildLogo.png" width="950" height="600"></img></a>
+            <a href="Compare.html"><img class="compareimage" src="CompareLogo.png" width="900" height="500"></img></a>
+            <a href="Review.html"><img class="reviewimage" src="ReviewLogo.png" width="900" height="500"></img></a>
+            </div>
+        </div>
+    </body>
+</html>

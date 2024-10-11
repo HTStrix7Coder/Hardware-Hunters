@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.backing{
+    width:100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 3%;
+}
+nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: rgb(227, 42, 42);
+    color: white;
+    font-weight: 700;
+    font-size: xx-large;
+    cursor: pointer;
+    position: absolute;
+    right: 160px;
+    top: 200px;
+}
+.btn:hover
+{
+    border-color: #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+}
+.context{
+    margin-top: 10%;
+    color:white;
+    max-width: 1620px;
+    position: relative;
+}
+.buildimage
+{
+    position: absolute;
+    top: 120px;
+    left: -250px;
+}
+.buildimage:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.compareimage:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.reviewimage:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.compareimage
+{
+    position: absolute;
+    top: 210px;
+    left: 230px;
+}
+.reviewimage
+{
+    position: absolute;
+    top: 210px;
+    left: 750px;
+}
+.context h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 75px;
+}
+.whiteback
+{
+    border-radius: 10px;
+}
+.titlehead
+{
+    font-size: 50px;
+    top: 50px;
+    left: 300px;
+    position: absolute;
+}

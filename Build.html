@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<style>
+body
+{
+background-image:url('3607424.jpg');
+background-repeat:no-repeat;
+background-size: 1600px 720px;
+}
+button
+{
+width: 200px;
+height: 50px;
+font-size: 30px;
+background-color: brown;
+}
+.heading
+{
+font-size:60px;
+font-family:Gotham;
+font-weight:bold;
+color:red;
+background-size:cover;
+animation: blink-animation 1s step-start infinite;
+}
+video
+{
+margin: 0 auto;
+position: absolute;
+top: 50%;
+left:15%;
+transform: translate(-50%, -50%);
+border-radius:10px;
+}
+p
+{
+margin-top: 10px;
+margin-left: 700px;
+padding: 10px;
+font-size:20px;
+color:black;
+background-color:green;
+display:inline-block;
+border-radius: 10px;
+}
+table,th,td
+{
+border: 1px solid white;
+border-collapse: collapse;
+margin-top: 20px;
+margin-left: 500px;
+padding: 10px;
+font-size:20px;
+color:white;
+}
+.logo
+{
+position: absolute;
+top: 0;
+left: 100;
+border-radius:5px;
+}
+.offer
+{
+text-align:right;
+font-size:30px;
+color:green;
+font-weight:bold;
+font-family:Roboto Light;
+}
+</style>
+<html>
+<body>
+<center>
+<div class="heading">Customize your Rig Here</div>
+</center>
+<div class="logo">
+<img src="TemplateTransparent.png" width="200px" height="100px">
+</div>
+<br>
+<br>
+<br>
+<br>
+<p>
+Estimated Wattage:
+</p>
+<table>
+<tr>
+<th style="width:70%">Component</th> 
+</tr>
+<tr>
+<td>Choose Your CPU
+    <select id="cpu" name="cpu">
+        <!-- Low-end CPUs -->
+        <optgroup label="Low-end CPUs">
+          <option value="Intel Pentium Gold G6400">Intel Pentium Gold G6400</option>
+          <option value="AMD Athlon 3000G">AMD Athlon 3000G</option>
+          <option value="Intel Core i3-10100">Intel Core i3-10100</option>
+          <option value="AMD Ryzen 3 3100">AMD Ryzen 3 3100</option>
+          <option value="Intel Core i3-9100F">Intel Core i3-9100F</option>
+          <option value="AMD Ryzen 3 3200G">AMD Ryzen 3 3200G</option>
+          <option value="Intel Core i3-8100">Intel Core i3-8100</option>
+          <option value="AMD Athlon 200GE">AMD Athlon 200GE</option>
+          <option value="Intel Core i3-7100">Intel Core i3-7100</option>
+          <option value="AMD Athlon 220GE">AMD Athlon 220GE</option>
+        </optgroup>
+      
+        <!-- Mid-range CPUs -->
+        <optgroup label="Mid-range CPUs">
+          <option value="Intel Core i5-10400">Intel Core i5-10400</option>
+          <option value="AMD Ryzen 5 3600">AMD Ryzen 5 3600</option>
+          <option value="Intel Core i7-10700">Intel Core i7-10700</option>
+          <option value="AMD Ryzen 7 3700X">AMD Ryzen 7 3700X</option>
+          <option value="Intel Core i5-11400">Intel Core i5-11400</option>
+          <option value="AMD Ryzen 5 5600X">AMD Ryzen 5 5600X</option>
+          <option value="Intel Core i5-9400F">Intel Core i5-9400F</option>
+          <option value="AMD Ryzen 5 3600X">AMD Ryzen 5 3600X</option>
+          <option value="Intel Core i5-9600KF">Intel Core i5-9600KF</option>
+          <option value="AMD Ryzen 5 3500X">AMD Ryzen 5 3500X</option>
+        </optgroup>
+      
+        <!-- High-end CPUs -->
+        <optgroup label="High-end CPUs">
+          <option value="Intel Core i9-10900K">Intel Core i9-10900K</option>
+          <option value="AMD Ryzen 9 5900X">AMD Ryzen 9 5900X</option>
+          <option value="Intel Core i9-11900K">Intel Core i9-11900K</option>
+          <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X</option>
+          <option value="Intel Core i7-11700K">Intel Core i7-11700K</option>
+          <option value="AMD Ryzen 7 5800X">AMD Ryzen 7 5800X</option>
+          <option value="Intel Core i9-9900K">Intel Core i9-9900K</option>
+          <option value="AMD Ryzen 9 3900X">AMD Ryzen 9 3900X</option>
+          <option value="Intel Core i7-9700K">Intel Core i7-9700K</option>
+          <option value="AMD Ryzen 7 3800X">AMD Ryzen 7 3800X</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+<tr>
+<td>Choose Your Graphics Card
+    <select id="gpu" name="gpu">
+        <optgroup label="Low-end GPUs">
+          <option value="GTX 1050Ti">GTX 1050Ti</option>
+          <option value="GTX 1650">GTX 1650</option>
+          <option value="RX 580">RX 580</option>
+        </optgroup>
+        <optgroup label="Mid-range GPUs">
+          <option value="GTX 1060">GTX 1060</option>
+          <option value="GTX 1660Ti">GTX 1660Ti</option>
+          <option value="RX 6700">RX 6700</option>
+          <option value="RX 6800">RX 6800</option>
+        </optgroup>
+        <optgroup label="High-end GPUs">
+          <option value="RTX 3060">RTX 3060</option>
+          <option value="RTX 3070">RTX 3070</option>
+          <option value="RTX 3080Ti">RTX 3080Ti</option>
+          <option value="RTX 3090">RTX 3090</option>
+          <option value="RX 6600">RX 6600</option>
+          <option value="RX 7600">RX 7600</option>
+          <option value="RX 7700">RX 7700</option>
+          <option value="RX 7800">RX 7800</option>
+          <option value="RX 7900 XT">RX 7900 XT</option>
+          <option value="RTX 4050">RTX 4050</option>
+          <option value="RTX 4060">RTX 4060</option>
+          <option value="RTX 4070">RTX 4070</option>
+          <option value="RTX 4070Ti">RTX 4070Ti</option>
+          <option value="RTX 4080">RTX 4080</option>
+          <option value="RTX 4080Ti">RTX 4080Ti</option>
+          <option value="RTX 4090">RTX 4090</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+<tr>
+<td>Choose Your RAM
+    <select id="ram" name="ram">
+        <!-- Low-capacity RAMs -->
+        <optgroup label="Low-capacity RAMs">
+          <option value="Corsair 4GB DDR4">Corsair 4GB DDR4</option>
+          <option value="Kingston 4GB DDR4">Kingston 4GB DDR4</option>
+          <option value="Crucial 4GB DDR3">Crucial 4GB DDR3</option>
+          <option value="G.SKILL 4GB DDR3">G.SKILL 4GB DDR3</option>
+          <option value="Samsung 4GB DDR4 SO-DIMM">Samsung 4GB DDR4 SO-DIMM</option>
+          <option value="ADATA 4GB DDR4 SO-DIMM">ADATA 4GB DDR4 SO-DIMM</option>
+          <option value="Transcend 4GB DDR3 SO-DIMM">Transcend 4GB DDR3 SO-DIMM</option>
+        </optgroup>
+      
+        <!-- Mid-capacity RAMs -->
+        <optgroup label="Mid-capacity RAMs">
+          <option value="Corsair 16GB DDR4">Corsair 16GB DDR4</option>
+          <option value="Kingston 16GB DDR4">Kingston 16GB DDR4</option>
+          <option value="Crucial 16GB DDR3">Crucial 16GB DDR3</option>
+          <option value="G.SKILL 16GB DDR3">G.SKILL 16GB DDR3</option>
+          <option value="Samsung 16GB DDR4 SO-DIMM">Samsung 16GB DDR4 SO-DIMM</option>
+          <option value="ADATA 16GB DDR4 SO-DIMM">ADATA 16GB DDR4 SO-DIMM</option>
+          <option value="Transcend 16GB DDR3 SO-DIMM">Transcend 16GB DDR3 SO-DIMM</option>
+        </optgroup>
+      
+        <!-- High-capacity RAMs -->
+        <optgroup label="High-capacity RAMs">
+          <option value="Corsair 64GB DDR4">Corsair 64GB DDR4</option>
+          <option value="Kingston 64GB DDR4">Kingston 64GB DDR4</option>
+          <option value="Crucial 64GB DDR3">Crucial 64GB DDR3</option>
+          <option value="G.SKILL 64GB DDR3">G.SKILL 64GB DDR3</option>
+          <option value="Samsung 64GB DDR4 SO-DIMM">Samsung 64GB DDR4 SO-DIMM</option>
+          <option value="ADATA 64GB DDR4 SO-DIMM">ADATA 64GB DDR4 SO-DIMM</option>
+          <option value="Transcend 64GB DDR3 SO-DIMM">Transcend 64GB DDR3 SO-DIMM</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+<tr>
+<td>Choose Your Power Supply
+    <select id="psu" name="psu">
+        <!-- Low-wattage PSUs -->
+        <optgroup label="Low-wattage PSUs">
+          <option value="Corsair CX450M 450W">Corsair CX450M 450W</option>
+          <option value="EVGA 500 W1 500W">EVGA 500 W1 500W</option>
+          <option value="Cooler Master MWE 500W">Cooler Master MWE 500W</option>
+          <option value="Seasonic S12III 500W">Seasonic S12III 500W</option>
+          <option value="Thermaltake Smart 500W">Thermaltake Smart 500W</option>
+          <option value="Antec VP500PC 500W">Antec VP500PC 500W</option>
+          <option value="be quiet! Pure Power 11 400W">be quiet! Pure Power 11 400W</option>
+        </optgroup>
+      
+        <!-- Mid-wattage PSUs -->
+        <optgroup label="Mid-wattage PSUs">
+          <option value="Corsair CX650M 650W">Corsair CX650M 650W</option>
+          <option value="EVGA 600 W1 600W">EVGA 600 W1 600W</option>
+          <option value="Cooler Master MWE 650W">Cooler Master MWE 650W</option>
+          <option value="Seasonic S12III 650W">Seasonic S12III 650W</option>
+          <option value="Thermaltake Smart 600W">Thermaltake Smart 600W</option>
+          <option value="Antec Earthwatts Gold Pro 650W">Antec Earthwatts Gold Pro 650W</option>
+          <option value="be quiet! Pure Power 11 600W">be quiet! Pure Power 11 600W</option>
+        </optgroup>
+      
+        <!-- High-wattage PSUs -->
+        <optgroup label="High-wattage PSUs">
+          <option value="Corsair RM850x 850W">Corsair RM850x 850W</option>
+          <option value="EVGA Supernova 850 G3 850W">EVGA Supernova 850 G3 850W</option>
+          <option value="Cooler Master MWE Gold 850W">Cooler Master MWE Gold 850W</option>
+          <option value="Seasonic Focus GX-850 850W">Seasonic Focus GX-850 850W</option>
+          <option value="Thermaltake Toughpower GF1 850W">Thermaltake Toughpower GF1 850W</option>
+          <option value="Antec HCG850 Extreme 850W">Antec HCG850 Extreme 850W</option>
+          <option value="be quiet! Straight Power 11 850W">be quiet! Straight Power 11 850W</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+<tr>
+<td>Choose Your Motherboard
+    <select id="motherboard" name="motherboard">
+        <!-- ATX Motherboards -->
+        <optgroup label="ATX Motherboards">
+          <option value="ASUS ROG Strix Z590-E Gaming ATX">ASUS ROG Strix Z590-E Gaming ATX</option>
+          <option value="GIGABYTE Z590 AORUS ELITE ATX">GIGABYTE Z590 AORUS ELITE ATX</option>
+          <option value="MSI MPG Z590 GAMING EDGE WIFI ATX">MSI MPG Z590 GAMING EDGE WIFI ATX</option>
+          <option value="ASRock Z590 Phantom Gaming 4 ATX">ASRock Z590 Phantom Gaming 4 ATX</option>
+          <option value="ASUS TUF GAMING B560-PLUS ATX">ASUS TUF GAMING B560-PLUS ATX</option>
+          <option value="GIGABYTE B560 AORUS PRO AX ATX">GIGABYTE B560 AORUS PRO AX ATX</option>
+          <option value="MSI B560 TOMAHAWK WIFI ATX">MSI B560 TOMAHAWK WIFI ATX</option>
+        </optgroup>
+      
+        <!-- Micro-ATX Motherboards -->
+        <optgroup label="Micro-ATX Motherboards">
+          <option value="ASUS ROG Strix B550-F GAMING (Wi-Fi 6) Micro ATX">ASUS ROG Strix B550-F GAMING (Wi-Fi 6) Micro ATX</option>
+          <option value="GIGABYTE B550M AORUS ELITE Micro ATX">GIGABYTE B550M AORUS ELITE Micro ATX</option>
+          <option value="MSI MAG B550M MORTAR Micro ATX">MSI MAG B550M MORTAR Micro ATX</option>
+          <option value="ASRock B550M STEEL LEGEND Micro ATX">ASRock B550M STEEL LEGEND Micro ATX</option>
+          <option value="ASUS PRIME B460M-A Micro ATX">ASUS PRIME B460M-A Micro ATX</option>
+          <option value="GIGABYTE B460M DS3H Micro ATX">GIGABYTE B460M DS3H Micro ATX</option>
+          <option value="MSI B460M-A PRO Micro ATX">MSI B460M-A PRO Micro ATX</option>
+        </optgroup>
+      
+        <!-- Mini-ITX Motherboards -->
+        <optgroup label="Mini-ITX Motherboards">
+          <option value="ASUS ROG Strix B550-I GAMING Mini ITX">ASUS ROG Strix B550-I GAMING Mini ITX</option>
+          <option value="GIGABYTE B550I AORUS PRO AX Mini ITX">GIGABYTE B550I AORUS PRO AX Mini ITX</option>
+          <option value="MSI MPG B550I GAMING EDGE WIFI Mini ITX">MSI MPG B550I GAMING EDGE WIFI Mini ITX</option>
+          <option value="ASRock B550M-ITX/AC Mini ITX">ASRock B550M-ITX/AC Mini ITX</option>
+          <option value="ASUS ROG STRIX Z490-I GAMING Mini ITX">ASUS ROG STRIX Z490-I GAMING Mini ITX</option>
+          <option value="GIGABYTE Z490I AORUS ULTRA Mini ITX">GIGABYTE Z490I AORUS ULTRA Mini ITX</option>
+          <option value="MSI MPG Z490I GAMING EDGE WIFI Mini ITX">MSI MPG Z490I GAMING EDGE WIFI Mini ITX</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+<tr>
+<td>Choose Your SSD
+    <select id="ssd" name="ssd">
+        <!-- Low-capacity SSDs -->
+        <optgroup label="Low-capacity SSDs">
+          <option value="Samsung 860 EVO 250GB">Samsung 860 EVO 250GB</option>
+          <option value="Crucial BX500 240GB">Crucial BX500 240GB</option>
+          <option value="WD Blue 3D NAND 250GB">WD Blue 3D NAND 250GB</option>
+          <option value="ADATA SU800 256GB">ADATA SU800 256GB</option>
+          <option value="SanDisk SSD PLUS 240GB">SanDisk SSD PLUS 240GB</option>
+          <option value="Kingston A400 240GB">Kingston A400 240GB</option>
+          <option value="PNY CS900 240GB">PNY CS900 240GB</option>
+        </optgroup>
+      
+        <!-- Mid-capacity SSDs -->
+        <optgroup label="Mid-capacity SSDs">
+          <option value="Samsung 970 EVO 500GB">Samsung 970 EVO 500GB</option>
+          <option value="Crucial MX500 500GB">Crucial MX500 500GB</option>
+          <option value="WD Blue SN550 500GB">WD Blue SN550 500GB</option>
+          <option value="ADATA XPG SX8200 Pro 512GB">ADATA XPG SX8200 Pro 512GB</option>
+          <option value="SanDisk Ultra 3D 500GB">SanDisk Ultra 3D 500GB</option>
+          <option value="Kingston KC600 512GB">Kingston KC600 512GB</option>
+          <option value="PNY XLR8 CS3030 500GB">PNY XLR8 CS3030 500GB</option>
+        </optgroup>
+      
+        <!-- High-capacity SSDs -->
+        <optgroup label="High-capacity SSDs">
+          <option value="Samsung 870 EVO 1TB">Samsung 870 EVO 1TB</option>
+          <option value="Crucial MX500 1TB">Crucial MX500 1TB</option>
+          <option value="WD Blue SN550 1TB">WD Blue SN550 1TB</option>
+          <option value="ADATA XPG SX8200 Pro 1TB">ADATA XPG SX8200 Pro 1TB</option>
+          <option value="SanDisk Ultra 3D 1TB">SanDisk Ultra 3D 1TB</option>
+          <option value="Kingston KC600 1TB">Kingston KC600 1TB</option>
+          <option value="PNY XLR8 CS3030 1TB">PNY XLR8 CS3030 1TB</option>
+        </optgroup>
+      </select>
+    </tr>
+<tr>
+<td>Choose Your CASE
+    <select id="case" name="case">
+        <!-- ATX Cases -->
+        <optgroup label="ATX Cases">
+          <option value="NZXT H510 Mid Tower">NZXT H510 Mid Tower</option>
+          <option value="Fractal Design Meshify C Mid Tower">Fractal Design Meshify C Mid Tower</option>
+          <option value="Cooler Master MasterBox MB511 Mid Tower">Cooler Master MasterBox MB511 Mid Tower</option>
+          <option value="Phanteks Eclipse P400A Mid Tower">Phanteks Eclipse P400A Mid Tower</option>
+          <option value="Corsair 4000D Airflow Mid Tower">Corsair 4000D Airflow Mid Tower</option>
+          <option value="Lian Li Lancool II Mesh Mid Tower">Lian Li Lancool II Mesh Mid Tower</option>
+          <option value="be quiet! Pure Base 500DX Mid Tower">be quiet! Pure Base 500DX Mid Tower</option>
+        </optgroup>
+      
+        <!-- Micro-ATX Cases -->
+        <optgroup label="Micro-ATX Cases">
+          <option value="NZXT H210 Mini Tower">NZXT H210 Mini Tower</option>
+          <option value="Fractal Design Define Mini C Micro Tower">Fractal Design Define Mini C Micro Tower</option>
+          <option value="Cooler Master MasterBox Q300L Mini Tower">Cooler Master MasterBox Q300L Mini Tower</option>
+          <option value="Phanteks Eclipse P300A Mesh Mini Tower">Phanteks Eclipse P300A Mesh Mini Tower</option>
+          <option value="Corsair 280X RGB Micro Tower">Corsair 280X RGB Micro Tower</option>
+          <option value="Thermaltake Core V21 Micro Tower">Thermaltake Core V21 Micro Tower</option>
+          <option value="SilverStone SG13 Mini Tower">SilverStone SG13 Mini Tower</option>
+        </optgroup>
+      
+        <!-- Mini-ITX Cases -->
+        <optgroup label="Mini-ITX Cases">
+          <option value="NZXT H210i Mini Tower">NZXT H210i Mini Tower</option>
+          <option value="Fractal Design Node 202 Mini Tower">Fractal Design Node 202 Mini Tower</option>
+          <option value="Cooler Master NR200 Mini Tower">Cooler Master NR200 Mini Tower</option>
+          <option value="Phanteks Enthoo Evolv Shift Air Mini Tower">Phanteks Enthoo Evolv Shift Air Mini Tower</option>
+          <option value="Corsair Crystal 280X RGB Mini Tower">Corsair Crystal 280X RGB Mini Tower</option>
+          <option value="Lian Li TU150 Mini Tower">Lian Li TU150 Mini Tower</option>
+          <option value="SilverStone SG13 Mini Tower">SilverStone SG13 Mini Tower</option>
+        </optgroup>
+      </select>
+</td>
+</tr>
+</table>
+<br>
+<center>
+<button id="showSelectedComponents">CHECKOUT</button>
+</center>
+<video width="400" height="400" loop autoplay muted>
+<source src="PCVideo2.mp4" type="video/mp4">
+</video>
+<br>
+<div class="offer">
+Get 20% off on all RTX 4000 Series GPUs Code:RTX40BITE
+</div>
+</body>
+</html>
+<script>
+  document.getElementById("showSelectedComponents").addEventListener("click", function() {
+    // Get selected GPU
+    var selectedGPU = document.getElementById("gpu").value;
+    // Get selected CPU
+    var selectedCPU = document.getElementById("cpu").value;
+    // Get selected components from other dropdowns
+    var selectedPSU = document.getElementById("psu").value;
+    // Get selected RAM
+    var selectedRAM = document.getElementById("ram").value;
+    // Get selected motherboard
+    var selectedMB = document.getElementById("motherboard").value;
+    // Get selected SSD
+    var selectedSSD = document.getElementById("ssd").value;
+    // Get selected case
+    var selectedCASE = document.getElementById("case").value;
+    // Redirect to another page with selected components
+    window.location.href = "purchase.html?cpu=" + encodeURIComponent(selectedCPU) + "&gpu=" + encodeURIComponent(selectedGPU) + "&ram=" + encodeURIComponent(selectedRAM) + "&motherboard=" + encodeURIComponent(selectedMB) + "&psu=" + encodeURIComponent(selectedPSU) + "&ssd=" + encodeURIComponent(selectedSSD) + "&case=" + encodeURIComponent(selectedCASE);
+  });
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<div id="error">
+</div>
+<body>
+    <form id="form">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text"><br>
+        <label for="age">Age</label><br>
+        <input id="age" name="age" type="text"><br>
+        <label for="password">password</label><br>
+        <input id="password" name="password" type="password"><br>
+        <button type="submit">Submit</button><br>
+    </form>
+</body>
+</html>
+<script>
+const name=document.getElementById('name');
+const age=document.getElementById('age');
+const form=document.getElementById('form');
+const errorElement = document.getElementById('error');
+const password = document.getElementById('password');
+form.addEventListener('submit',(e) => {
+    let messages=[];
+    if(name.value === '' || name.value == null)
+    {
+        messages.push('Name is Invalid\n');
+    }
+    if(!isInteger(parseInt(age.value)))
+    {
+        messages.push('Age is invalid\n');
+    }
+    if(password.value.length<=6)
+    {
+        messages.push('Password should be Greater than Six Characters\n');
+    }
+    if(messages.length>0)
+    {
+        e.preventDefault()
+        errorElement.innerText = messages.join('');
+    }
+});
+function isInteger(value)
+{
+    return Number.isInteger(value);
+}
+</script>

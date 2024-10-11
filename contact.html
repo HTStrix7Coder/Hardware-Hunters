@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333333;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+    }
+    .contact-form textarea {
+        height: 150px;
+    }
+    .contact-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .contact-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form class="contact-form" method="post">
+        <input type="text" name="name" placeholder="Your Name.." required>
+        <input type="email" name="email" placeholder="Your Email.." required>
+        <textarea name="message" placeholder="State your Issue.." required></textarea>
+        <input type="submit" value="Submit" onclick="showAlert()">
+    </form>
+</div>
+<br>
+<br>
+<center>
+<h2>Contact Number 1: (555) 123-4567</h2>
+<h2>Contact Number 2: (123) 456-7890</h2>
+</center>
+</body>
+</html>
+<script>
+    function showAlert() {
+        alert("Thank You for Contacting Us We will Respond to Your Email As Soon as Possible,We Appreciate Your Patience All The Way");
+    }
+    </script>

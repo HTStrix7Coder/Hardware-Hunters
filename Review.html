@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<style>
+body {
+    background-color:#FFE5B4;
+}
+.first
+{
+    font-family: Roboto;
+    font-size: 20px;
+}
+.logo
+{
+position: absolute;
+top: 0;
+left: 100;
+border-radius:5px;
+}
+.reviews {
+    font-family: Arial;
+    font-size: 20px; /* Corrected syntax for font size */
+    margin: auto;
+    width: 50%;
+    border: 1px solid black; /* Border around the container */
+    padding: 10px; /* Add some padding */
+}
+
+tr {
+    width: 100px;
+}
+input
+{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+</style>
+<html>
+<body>
+<div class="logo">
+<img src="TemplateTransparent.png" width="200px" height="100px">
+</div>
+<center>
+<div class="first">
+<p>Choose what component to see reviews</p>
+</div>
+<br>
+<br>
+<select id="review" name="review" onchange="showParagraph()">
+<option value="CPU">CPU</option>
+<option value="GPU">GPU</option>
+</select>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="reviews">
+<p id="GPU" class="gpupara">
+Rating: 5/5
+Reviewer: GamingEnthusiast88
+Review:
+The NVIDIA GeForce RTX 4090 is an absolute beast of a GPU that delivers unrivaled graphics performance for gaming enthusiasts and content creators alike. From the moment I installed this powerhouse into my system, I knew I was in for a treat.
+Gaming performance is simply breathtaking. Whether I'm exploring vast open worlds, engaging in intense multiplayer battles, or pushing the limits of virtual reality, the RTX 4090 handles everything with ease. Games run smoother than ever before, with stunning visual fidelity and lifelike details that truly immerse you in the experience.
+Beyond gaming, the RTX 4090 excels in content creation tasks. Video editing, 3D rendering, and ray-traced simulations are completed in record time, thanks to the GPU's immense processing power and dedicated AI capabilities.
+One of the standout features of the RTX 4090 is its ray tracing performance. With hardware-accelerated ray tracing, lighting and reflections look incredibly realistic, adding a new level of immersion to supported games and applications.
+While the RTX 4090 is undoubtedly a high-end GPU, it manages to stay surprisingly cool under load, thanks to its efficient cooling design. Plus, features like NVIDIA DLSS enhance performance in supported titles, allowing you to achieve higher frame rates without sacrificing image quality.
+In summary, the NVIDIA GeForce RTX 4090 is a GPU that sets a new standard for graphics performance. Whether you're a hardcore gamer, a professional content creator, or simply someone who appreciates cutting-edge technology, this GPU is sure to impress.
+</p>
+</div>
+<br>
+<br>
+<div class="reviews">
+<p id="CPU" class="cpupara">
+Having used the Intel Core i9-13900K for six months now, I can confidently say it's been a game-changer for my computing experience.
+Performance-wise, this processor is a beast. Whether I'm gaming, editing videos, or multitasking, it handles everything smoothly without any lag or hiccups. Gaming performance, in particular, has been exceptional, with high frame rates and minimal stuttering even in demanding titles.
+Overclocking this chip has been a breeze, and the extra performance boost it provides is noticeable, especially during intensive tasks. Despite its power, it's surprisingly energy-efficient, which is a nice bonus for keeping power bills in check.
+Overall, the Intel Core i9-13900K has exceeded my expectations and made my computing experience more enjoyable and efficient. If you're looking for top-tier performance without compromise, I highly recommend giving this processor a try.</p>
+</div>
+<br>
+<br>
+<div class="reviews">
+    <p id="GPU" class="gpupara">
+        Rating: 4.5/5
+        Reviewer: BudgetBuilder
+        Review:
+        For budget-conscious gamers looking for exceptional performance without breaking the bank, the AMD Radeon RX 6700 XT is a GPU that delivers outstanding value. Despite its affordable price tag, this GPU punches well above its weight class and provides an excellent gaming experience.
+        Gaming performance is impressive, with smooth frame rates and high-resolution visuals in most modern titles. Whether you're exploring immersive open worlds, engaging in fast-paced multiplayer battles, or experiencing the latest ray-traced effects, the RX 6700 XT handles everything with ease.
+        Beyond gaming, the RX 6700 XT excels in content creation tasks. Video editing, photo rendering, and 3D modeling are completed quickly and efficiently, thanks to the GPU's powerful compute capabilities.
+        One of the standout features of the RX 6700 XT is its efficiency. Despite its performance, this GPU remains relatively energy-efficient, helping to keep system temperatures and power consumption in check during prolonged gaming sessions.
+        While the RX 6700 XT may not offer the same level of ray tracing performance as higher-end GPUs, it still delivers impressive visuals and smooth gameplay in supported titles. Plus, features like AMD Smart Access Memory further enhance performance when paired with compatible hardware.
+        In summary, the AMD Radeon RX 6700 XT is a GPU that offers exceptional value for budget gamers. Whether you're building a new gaming rig or upgrading an existing system, this GPU provides the performance you need at a price you can afford.
+    </p>
+</div>
+<br>
+<br>
+<div class="reviews">
+<p id="CPU" class="cpupara">
+Title: Exceptional Performance and Efficiency
+
+Rating: 5/5
+
+Reviewer: TechEnthusiast87
+
+I've been using the Intel Core i9-13900K for several months now, and I must say it has completely transformed my computing experience. This processor is an absolute powerhouse, delivering unparalleled performance across various tasks.
+
+From gaming to content creation, the i9-13900K handles everything with ease. Games run smoother than ever before, with buttery-smooth frame rates and minimal stuttering even in the most demanding titles. Video editing and rendering tasks are completed in record time, thanks to the processor's impressive multi-threading capabilities.
+
+One of the standout features of the i9-13900K is its overclocking potential. With a bit of tweaking, I was able to push this chip beyond its stock limits, unlocking even greater performance gains. Despite the increased power, the processor remains surprisingly energy-efficient, helping to keep my overall system power consumption in check.
+
+The Intel Core i9-13900K has truly exceeded my expectations in every aspect. Whether you're a hardcore gamer, a content creator, or simply someone who demands the best performance from their PC, this processor is a must-have. I wholeheartedly recommend it to anyone in the market for a high-end CPU.</p>
+</div>
+<br>
+<br>
+<div class="reviews">
+    <p id="GPU" class="gpupara">
+        Rating: 4.6/5
+        Reviewer: EcoTechEnthusiast
+        Review:
+        The AMD Radeon RX 6800 XT is a GPU that redefines the balance between power and efficiency, making it an ideal choice for environmentally conscious gamers and professionals. With its impressive performance and energy-efficient design, this GPU delivers a compelling experience without compromising on sustainability.
+        Gaming performance is exceptional, with smooth frame rates and stunning visuals in even the most demanding titles. Whether I'm exploring vast open worlds, engaging in intense multiplayer battles, or experiencing the latest ray-traced effects, the RX 6800 XT handles everything with ease.
+        Beyond gaming, the RX 6800 XT excels in content creation tasks. Video editing, photo rendering, and 3D modeling are completed quickly and efficiently, thanks to the GPU's powerful compute capabilities.
+        One of the standout features of the RX 6800 XT is its efficiency. Despite its performance, this GPU remains relatively energy-efficient, helping to reduce overall system power consumption and environmental impact.
+        While the RX 6800 XT may not offer the same level of ray tracing performance as some competing GPUs, it still delivers impressive visuals and smooth gameplay in supported titles. Plus, features like AMD Smart Access Memory further enhance performance when paired with compatible hardware.
+        In summary, the AMD Radeon RX 6800 XT is a GPU that offers a compelling blend of performance and efficiency. Whether you're a gamer looking to reduce your carbon footprint or a professional seeking sustainable computing solutions, this GPU provides the power you need with a conscience.
+    </p>
+</div>
+<br>
+<br>
+<div class="reviews">
+<p id="CPU" class="cpupara">
+Rating: 4.5/5
+Reviewer: GamerXperience
+Review:
+AMD's Ryzen 9 5900X is a marvel of modern computing technology. As an avid gamer and content creator, I require a CPU that can handle anything I throw at it, and the 5900X delivers in spades.
+Gaming performance is exceptional, with high frame rates and smooth gameplay across a wide range of titles. The 5900X's multi-core performance shines in productivity tasks like video editing and 3D rendering, where it effortlessly chews through even the most demanding workloads.
+Overclocking enthusiasts will appreciate the headroom provided by the 5900X. With a capable cooling solution, I was able to push this chip to impressive speeds, unlocking even greater performance potential.
+Despite its power, the 5900X remains relatively energy-efficient, helping to keep system temperatures in check during long gaming sessions or rendering marathons.
+The Ryzen 9 5900X is a true powerhouse CPU that offers unmatched performance and versatility. Whether you're a hardcore gamer, a content creator, or a multitasking enthusiast, this processor has you covered.
+</p>
+</div>
+<br>
+<br>
+<div class="reviews">
+    <p id="GPU" class="gpupara">
+        Rating: 4.8/5
+        Reviewer: TechGuruX
+        Review:
+        The ASUS ROG Strix GeForce RTX 3080 Ti is a testament to cutting-edge technology and innovation in the world of gaming GPUs. From its sleek design to its blistering performance, this GPU is a dream come true for enthusiasts and power users alike.
+        Gaming performance is nothing short of spectacular. Whether I'm exploring expansive open worlds, engaging in fast-paced multiplayer battles, or pushing the limits of virtual reality, the RTX 3080 Ti handles everything with ease. Games run smoother than ever before, with jaw-dropping visuals and buttery-smooth frame rates that truly immerse you in the experience.
+        Beyond gaming, the RTX 3080 Ti excels in content creation tasks. Video editing, 3D rendering, and ray-traced simulations are completed in record time, thanks to the GPU's immense processing power and dedicated AI capabilities.
+        One of the standout features of the RTX 3080 Ti is its cooling solution. The ASUS ROG Strix variant features a robust cooling design with multiple fans and heat pipes, ensuring optimal thermal performance even under heavy load.
+        While the RTX 3080 Ti may come with a hefty price tag, it offers unparalleled performance and features that justify the investment for enthusiasts and professionals alike. Whether you're a hardcore gamer, a content creator, or a tech enthusiast, the ASUS ROG Strix GeForce RTX 3080 Ti is sure to impress.
+    </p>
+</div>
+<br>
+<br>
+<div class="reviews">
+<p id="CPU" class="cpupara">
+Rating: 4/5
+Reviewer: BudgetBuilder
+Review:
+For budget-conscious gamers and builders, the AMD Ryzen 5 5600X is a CPU that punches well above its weight class. Despite its affordable price tag, this processor offers impressive performance that rivals much more expensive options.
+Gaming performance is solid, with smooth frame rates and minimal stuttering in most titles. While it may not reach the heights of high-end CPUs, the 5600X provides a fantastic gaming experience for the price.
+Where the 5600X truly shines is in productivity tasks. Thanks to its multi-core performance, this CPU breezes through tasks like video editing, photo rendering, and multitasking without breaking a sweat.
+Overclocking potential is decent, though not as impressive as some higher-end options. With a modest overclock, however, you can squeeze out even more performance from this already capable chip.
+Overall, the Ryzen 5 5600X offers exceptional value for performance. If you're building a gaming rig on a budget or need a CPU that can handle everyday tasks with ease, look no further than this versatile processor.
+</p>
+</div>
+<br>
+<br>
+<div class="reviews">
+    <p id="GPU" class="gpupara">
+        Rating: 4.2/5
+        Reviewer: BudgetGamer123
+        Review:
+        The NVIDIA GeForce GTX 1650 is a budget-friendly GPU that offers solid performance for casual gamers and entry-level enthusiasts. Despite its affordable price tag, this GPU packs a punch and provides a decent gaming experience for those on a budget.
+        Gaming performance is respectable, with smooth frame rates and decent visuals in most modern titles. While it may struggle with ultra-high settings and resolutions, the GTX 1650 handles 1080p gaming with ease, providing an enjoyable gaming experience for casual gamers.
+        Beyond gaming, the GTX 1650 is also capable of handling basic content creation tasks. Video editing, photo rendering, and light 3D modeling are all possible, though performance may be limited compared to higher-end GPUs.
+        One of the advantages of the GTX 1650 is its power efficiency. With its low power consumption, this GPU runs cool and quiet, making it a great choice for smaller form factor builds and HTPCs.
+        While the GTX 1650 may not offer the same level of performance as higher-end GPUs, it provides excellent value for budget-conscious gamers and builders. Whether you're building a budget gaming PC or upgrading an older system, the NVIDIA GeForce GTX 1650 is a solid choice for those looking to get into PC gaming without breaking the bank.
+    </p>
+</div>
+<br>
+<br>
+<div class="reviews">
+<p id="CPU" class="cpupara">
+Rating: 4.7/5
+Reviewer: TechSavvyPro
+Review:
+The Intel Core i7-12700K is a true powerhouse CPU that strikes a perfect balance between performance and efficiency. As a professional content creator and avid gamer, I demand a processor that can handle demanding tasks with ease, and the i7-12700K delivers on all fronts.
+Gaming performance is exceptional, with smooth frame rates and minimal input lag even in the most demanding titles. Thanks to its high clock speeds and efficient architecture, games load quickly and run smoothly, providing an immersive gaming experience.
+On the content creation front, the i7-12700K shines bright. Whether I'm editing high-resolution videos, rendering complex 3D models, or running multiple virtual machines simultaneously, this CPU handles everything with aplomb. Its multi-core performance is particularly impressive, making quick work of even the most intensive workloads.
+Overclocking enthusiasts will appreciate the headroom provided by the i7-12700K. With proper cooling and tweaking, I was able to push this chip to impressive speeds, unlocking even greater performance gains.
+Despite its power, the i7-12700K remains relatively energy-efficient, helping to keep system temperatures in check during prolonged use. Plus, features like Intel's Hyper-Threading technology ensure smooth multitasking performance without compromising on efficiency.
+In summary, the Intel Core i7-12700K is a CPU that offers power and precision in equal measure. Whether you're a professional content creator, a hardcore gamer, or simply someone who demands the best from their hardware, this processor is sure to impress."
+</p>
+</div>
+<br>
+<br>
+</center>
+</body>
+</html>
+<script>
+function showParagraph() {
+    var selectedOption = document.getElementById("review").value;
+    var cpuparagraphs = document.querySelectorAll('.cpupara');
+    var gpuparagraphs = document.querySelectorAll('.gpupara');
+    for (var i = 0; i < cpuparagraphs.length; i++) {
+        cpuparagraphs[i].style.display = "none";
+    }
+    if (selectedOption === "CPU") {
+        for (var i = 0; i < cpuparagraphs.length; i++) {
+            cpuparagraphs[i].style.display = "block";
+    }}
+    for (var i = 0; i < gpuparagraphs.length; i++) {
+        gpuparagraphs[i].style.display = "none";
+    }
+    if (selectedOption === "GPU") {
+        for (var i = 0; i < gpuparagraphs.length; i++) {
+            gpuparagraphs[i].style.display = "block";
+        }}
+    else {
+        var paragraph = document.getElementById(selectedOption);
+        if (paragraph) {
+            paragraph.style.display = "block";
+        }
+    }
+}
+</script>
+
