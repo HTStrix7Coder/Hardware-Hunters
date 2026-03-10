@@ -1,0 +1,36 @@
+name: CI - Validate HTML
+
+on:
+  push:
+    branches: ["*"]        # Run on ALL branch pushes
+  pull_request:
+    branches: [main]       # Run on PRs targeting main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Pull your repo's code onto the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Install the HTML validator (Nu HTML Checker via Node)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HTML validator
+        run: npm install -g html-validate
+
+      # Step 3: Validate all .html files in the project
+      - name: Validate HTML files
+        run: html-validate "**/*.html"
+
+      # Step 4: Check for broken links
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress './**/*.html'
+          fail: true
