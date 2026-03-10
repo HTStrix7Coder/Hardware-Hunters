@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "no-trailing-whitespace": "off",
+    "no-inline-style": "off",
+    "deprecated": "warn",
+    "prefer-tbody": "off",
+    "no-implicit-button-type": "off",
+    "prefer-button": "off",
+    "no-autoplay": "warn",
+    "wcag/h30": "warn",
+    "wcag/h37": "warn",
+    "wcag/h63": "warn"
+  }
+}
