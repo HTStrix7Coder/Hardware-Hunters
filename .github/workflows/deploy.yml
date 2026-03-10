@@ -1,0 +1,38 @@
+name: CD - Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]       # Only deploy when code lands on main
+
+# Permissions needed to deploy to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Step 1: Checkout your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # Step 3: Upload your HTML files as the site artifact
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'           # Upload everything from root (adjust if needed)
+
+      # Step 4: Deploy to GitHub Pages!
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
